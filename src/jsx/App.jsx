@@ -23,8 +23,8 @@ class App extends Component {
     // https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv
     d3.csv('./data/data.csv').then((response) => {
       let elems = {};
-      for (var i = 0; i < response.length; i++) {
-        elems[response[i].state] = response[i]
+      for (let i = 0; i < response.length; i++) {
+        elems[response[i].state] = response[i];
       }
       this.setState((state, props) => ({
         data:elems
@@ -34,7 +34,6 @@ class App extends Component {
   drawMap() {
     let width = 1200;
     let height = 800;
-    console.log(this.state.data)
     let svg = d3.select('.' + style.map_container).append('svg').attr('width', width).attr('height', height);
     path = d3.geoPath().projection(projection);
     g = svg.append('g');
@@ -60,10 +59,10 @@ class App extends Component {
   getAreaColor(area) {
     if (this.state.data[area]) {
       if (this.state.data[area].d === '1') {
-        return 'rgba(105, 141, 197, 1)'
+        return 'rgba(105, 141, 197, 1)';
       }
       else if (this.state.data[area].r === '1') {
-        return 'rgba(240, 119, 99, 1)'
+        return 'rgba(240, 119, 99, 1)';
       }
     }
     return '#e5e5e5';

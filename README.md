@@ -2,7 +2,7 @@
 
 **Live demo** https://ebuddj.github.io/2020-us_election_result/
 
-## Project title
+## US Election Result
 
 **Sources**
 * []()
