@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600.css);
 body {
   margin: auto auto;
   padding: 0;
@@ -13,13 +13,13 @@ body {
 .plus___DWTpR h3 {
   font-family: 'Roboto';
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   margin: auto auto 10px auto;
   text-align: center;
 }
 .plus___DWTpR h4 {
   font-family: 'Roboto';
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 auto 5px auto;
 }
 .plus___DWTpR p {
@@ -42,6 +42,13 @@ body {
   stroke-width: 0.5px;
   stroke: #666;
   transition: fill 0.2s linear;
+}
+.plus___DWTpR .map_container___22zRx svg .text___3fVPW {
+  fill: #fff;
+  font-family: 'Roboto';
+  font-weight: 600;
+  text-align: center;
+  text-shadow: none;
 }
 .plus___DWTpR .meta_container___3p0xG {
   margin: auto auto;
