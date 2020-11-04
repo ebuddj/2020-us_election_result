@@ -80,7 +80,7 @@ class App extends Component {
             return 'rgba(227, 75, 91, ' + parseFloat(d.r) + ')';
           }
           else {
-            return '#fff';
+            return 'rgba(239, 240, 244, 1)';
           }
         });
 
