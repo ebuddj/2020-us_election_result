@@ -39,9 +39,8 @@ body {
   margin: auto auto;
 }
 .plus___DWTpR .map_container___22zRx svg .path___3EPLl {
-  stroke-width: 0.5px;
-  stroke: #666;
-  transition: fill 0.2s linear;
+  stroke-width: 2px;
+  stroke: #fff;
 }
 .plus___DWTpR .map_container___22zRx svg .text___3fVPW {
   fill: #fff;
