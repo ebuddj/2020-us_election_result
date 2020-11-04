@@ -155,7 +155,7 @@ class App extends Component {
         </div>
         <div className={style.meta_container}>
           <div><label className={style.democratics}></label><span className={style.value}>Biden {this.state.d_votes}</span><label className={style.republicans}></label><span className={style.value}>Trump {this.state.r_votes}</span></div>
-          <div><label>Source</label><span className={style.value}>DPA</span> <label>Updated</label><span className={style.value}>4.11.2020 18:11 GMT</span></div>
+          <div><label>Source</label><span className={style.value}>DPA</span> <label>Updated</label><span className={style.value}>4.11.2020 21:17 GMT</span></div>
         </div>
       </div>
     );
