@@ -62,9 +62,10 @@ class App extends Component {
         })
         .attr('r', (d, i) => {
           if (parseInt(d.votes) === 1) {
-            return 7;
+            return 6;
           }
-          return Math.max(parseInt(d.votes), 12);
+
+          return Math.max(Math.sqrt(parseInt(d.votes)) * 7, 12);
         })
         .attr('stroke', (d,i) => {
           if (parseFloat(d.d) > 0 || parseFloat(d.r) > 0) {
@@ -108,7 +109,7 @@ class App extends Component {
           return projection([areaCenters[d.state].Long, areaCenters[d.state].Lat])[1];
         })
         .style('font-size', (d, i) => {
-          return Math.max(parseInt(d.votes), 12) + 'px';
+          return Math.max(Math.sqrt(parseInt(d.votes)) * 7, 12) + 'px';
         })
         .html((d, i) => {
           this.countVotes(d.state);
