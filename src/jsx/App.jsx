@@ -71,10 +71,10 @@ class App extends Component {
         }));
       }
       if (parseFloat(this.state.data[area].d) > parseFloat(this.state.data[area].r)) {
-        return 'rgba(105, 141, 197, 1)';
+        return 'rgba(105, 141, 197, ' + parseFloat(this.state.data[area].d) + ')';
       }
       else if (parseFloat(this.state.data[area].r) > 0) {
-        return 'rgba(240, 119, 99, 1)';
+        return 'rgba(240, 119, 99, ' + parseFloat(this.state.data[area].r) + ')';
       }
     }
     return '#e5e5e5';
