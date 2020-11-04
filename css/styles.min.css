@@ -43,6 +43,39 @@ body {
   stroke: #666;
   transition: fill 0.2s linear;
 }
+.plus___DWTpR .meta_container___3p0xG {
+  margin: auto auto;
+  font-family: 'Roboto';
+  text-align: center;
+}
+.plus___DWTpR .meta_container___3p0xG div {
+  margin-bottom: 20px;
+}
+.plus___DWTpR .meta_container___3p0xG div label {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+.plus___DWTpR .meta_container___3p0xG div label.republicans___Kcuft,
+.plus___DWTpR .meta_container___3p0xG div label.democratics___1Cllr {
+  height: 26px;
+  line-height: 26px;
+  vertical-align: text-bottom;
+  width: 26px;
+}
+.plus___DWTpR .meta_container___3p0xG div label.republicans___Kcuft {
+  background-color: #f07763;
+}
+.plus___DWTpR .meta_container___3p0xG div label.democratics___1Cllr {
+  background-color: #698dc5;
+}
+.plus___DWTpR .meta_container___3p0xG div span.value___2L5q8 {
+  font-size: 26px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 20px;
+}
 .plus___DWTpR .clearfix___1yHqr {
   zoom: 1;
 }
