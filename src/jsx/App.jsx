@@ -16,7 +16,9 @@ class App extends Component {
     super(props);
 
     this.state = {
-      data:[]
+      data:[],
+      d_votes:3,
+      r_votes:0
     }
   }
   componentDidMount() {
@@ -58,10 +60,20 @@ class App extends Component {
   }
   getAreaColor(area) {
     if (this.state.data[area]) {
-      if (this.state.data[area].d === '1') {
+      if (parseFloat(this.state.data[area].d) > 0) {
+        this.setState((state, props) => ({
+          d_votes:parseInt(state.d_votes + parseInt(this.state.data[area].votes) * parseFloat(this.state.data[area].d))
+        }));
+      }
+      else if (parseFloat(this.state.data[area].r) > 0) {
+        this.setState((state, props) => ({
+          r_votes:parseInt(state.r_votes + parseInt(this.state.data[area].votes) * parseFloat(this.state.data[area].r))
+        }));
+      }
+      if (parseFloat(this.state.data[area].d) > parseFloat(this.state.data[area].r)) {
         return 'rgba(105, 141, 197, 1)';
       }
-      else if (this.state.data[area].r === '1') {
+      else if (parseFloat(this.state.data[area].r) > 0) {
         return 'rgba(240, 119, 99, 1)';
       }
     }
@@ -83,6 +95,10 @@ class App extends Component {
       <div className={style.plus}>
         <div>
           <div className={style.map_container}></div>
+        </div>
+        <div className={style.meta_container}>
+          <div><label className={style.democratics}></label><span className={style.value}>Biden {this.state.d_votes}</span><label className={style.republicans}></label><span className={style.value}>Trump {this.state.r_votes}</span></div>
+          <div><label>Source</label><span className={style.value}>DPA</span> <label>Updated</label><span className={style.value}>4:55 GMT</span></div>
         </div>
       </div>
     );

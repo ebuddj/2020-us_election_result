@@ -44,6 +44,39 @@ body {
       }
     }
   }
+  .meta_container {
+    margin: auto auto;
+    font-family: 'Roboto';
+    text-align: center;
+    div {
+      margin-bottom: 20px;
+      label {
+        display: inline-block;
+        font-size: 18px;
+        margin-right: 5px;
+        text-transform: uppercase;
+        &.republicans,
+        &.democratics {
+          height: 26px;
+          line-height: 26px;
+          vertical-align: text-bottom;
+          width: 26px;
+        }
+        &.republicans {
+          background-color: rgba(240, 119, 99, 1)
+        }
+        &.democratics {
+          background-color: rgba(105, 141, 197, 1);
+        }
+      }
+      span.value {
+        font-size: 26px;
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+  }
 
   @import 'basics.less';
 }
