@@ -101,7 +101,7 @@ class App extends Component {
         })
         .attr('text-anchor', 'middle')
         .attr('alignment-baseline', 'central')
-        .attr('class', style.number)
+        .attr('class', style.text)
         .attr('x', (d, i) => {
           return projection([areaCenters[d.state].Long, areaCenters[d.state].Lat])[0];
         })
