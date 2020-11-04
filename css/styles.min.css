@@ -48,10 +48,11 @@ body {
   font-weight: 400;
   text-align: center;
   text-shadow: none;
+  vertical-align: text-bottom;
 }
 .plus___DWTpR .meta_container___3p0xG {
-  margin: auto auto;
   font-family: 'Roboto';
+  margin: auto auto;
   text-align: center;
 }
 .plus___DWTpR .meta_container___3p0xG div {
