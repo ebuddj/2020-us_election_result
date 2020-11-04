@@ -109,7 +109,7 @@ class App extends Component {
           return projection([areaCenters[d.state].Long, areaCenters[d.state].Lat])[1];
         })
         .style('font-size', (d, i) => {
-          return Math.max(Math.sqrt(parseInt(d.votes)) * 7, 12) + 'px';
+          return Math.max(Math.sqrt(parseInt(d.votes)) * 6, 12) + 'px';
         })
         .html((d, i) => {
           this.countVotes(d.state);
