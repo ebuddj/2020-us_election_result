@@ -65,7 +65,7 @@ class App extends Component {
           d_votes:parseInt(state.d_votes + parseInt(this.state.data[area].votes) * parseFloat(this.state.data[area].d))
         }));
       }
-      else if (parseFloat(this.state.data[area].r) > 0) {
+      if (parseFloat(this.state.data[area].r) > 0) {
         this.setState((state, props) => ({
           r_votes:parseInt(state.r_votes + parseInt(this.state.data[area].votes) * parseFloat(this.state.data[area].r))
         }));
