@@ -12,7 +12,7 @@ The data comes from DPA, a German newswire, that is collecting information from 
 * [DPA from Yle](https://yle.fi/uutiset/3-11620051)
 
 **EBU links**
-* []()
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/93dd461dc7ba991666fc96d9b8854435/2020_21049805)
 
 **Used by**
 * []()
