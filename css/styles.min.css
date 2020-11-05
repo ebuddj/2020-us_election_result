@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600.css);
 body {
   margin: auto auto;
+  overflow: hidden;
   padding: 0;
 }
 .plus___DWTpR {
@@ -20,19 +21,19 @@ body {
 .plus___DWTpR h4 {
   font-family: 'Roboto';
   font-weight: 600;
-  margin: 0 auto 5px auto;
+  margin: 20px auto 5px auto;
 }
 .plus___DWTpR p {
   font-family: 'Roboto';
   font-size: 13px;
   line-height: 17px;
-  margin: 0 auto 0 auto;
+  margin: 20px auto 20px auto;
 }
 .plus___DWTpR a {
   color: #000;
 }
 .plus___DWTpR .map_container___22zRx {
-  margin: auto auto;
+  margin: -40px auto auto auto;
 }
 .plus___DWTpR .map_container___22zRx svg {
   display: block;
@@ -53,35 +54,92 @@ body {
 .plus___DWTpR .meta_container___3p0xG {
   font-family: 'Roboto';
   margin: auto auto;
+  max-width: 1000px;
+  position: relative;
   text-align: center;
 }
-.plus___DWTpR .meta_container___3p0xG div {
-  margin-bottom: 20px;
+.plus___DWTpR .meta_container___3p0xG .images_container___6mpYm {
+  zoom: 1;
+  font-size: 0;
 }
-.plus___DWTpR .meta_container___3p0xG div label {
+.plus___DWTpR .meta_container___3p0xG .images_container___6mpYm:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.plus___DWTpR .meta_container___3p0xG .images_container___6mpYm .image___3gJGa {
+  height: 100px;
+  width: 100px;
+}
+.plus___DWTpR .meta_container___3p0xG .images_container___6mpYm .image_container_d___2_Gub {
+  float: left;
+}
+.plus___DWTpR .meta_container___3p0xG .images_container___6mpYm .image_container_r___3o8se {
+  float: right;
+}
+.plus___DWTpR .meta_container___3p0xG .bar_container___1WVaT {
+  zoom: 1;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+.plus___DWTpR .meta_container___3p0xG .bar_container___1WVaT:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.plus___DWTpR .meta_container___3p0xG .bar_container___1WVaT .middle___3xoz0 {
+  background-color: #000;
+  height: 50px;
+  left: 50%;
+  margin-left: -2px;
+  position: absolute;
+  width: 4px;
+}
+.plus___DWTpR .meta_container___3p0xG .bar_container___1WVaT .middle___3xoz0:after {
+  content: '270';
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: -50px;
+  position: absolute;
+  top: -50px;
+  width: 100px;
+}
+.plus___DWTpR .meta_container___3p0xG .bar_container___1WVaT div {
+  box-sizing: border-box;
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+}
+.plus___DWTpR .meta_container___3p0xG .bar_container___1WVaT div.bar_d___2pqu8 {
+  background-color: #698dc5;
+  float: left;
+  text-align: left;
+}
+.plus___DWTpR .meta_container___3p0xG .bar_container___1WVaT div.bar_u___QZHE6 {
+  background-color: #eff0f4;
+  float: left;
+  text-align: left;
+}
+.plus___DWTpR .meta_container___3p0xG .bar_container___1WVaT div.bar_r___z9yZP {
+  background-color: #e34b5b;
+  float: left;
+  text-align: right;
+}
+.plus___DWTpR .meta_container___3p0xG label {
   display: inline-block;
   font-size: 18px;
-  margin-right: 5px;
+  margin-right: 10px;
+  margin-left: 20px;
   text-transform: uppercase;
 }
-.plus___DWTpR .meta_container___3p0xG div label.republicans___Kcuft,
-.plus___DWTpR .meta_container___3p0xG div label.democratics___1Cllr {
-  height: 26px;
-  line-height: 26px;
-  vertical-align: text-bottom;
-  width: 26px;
-}
-.plus___DWTpR .meta_container___3p0xG div label.republicans___Kcuft {
-  background-color: #f07763;
-}
-.plus___DWTpR .meta_container___3p0xG div label.democratics___1Cllr {
-  background-color: #698dc5;
-}
-.plus___DWTpR .meta_container___3p0xG div span.value___2L5q8 {
-  font-size: 26px;
-  font-weight: bold;
+.plus___DWTpR .meta_container___3p0xG span.value___2L5q8 {
   display: inline-block;
-  margin-right: 20px;
+  font-size: 26px;
+  font-weight: 600;
 }
 .plus___DWTpR .clearfix___1yHqr {
   zoom: 1;
