@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600.css');
 
 body {
-  margin:auto auto;
-  padding:0;
+  margin: auto auto;
+  overflow: hidden;
+  padding: 0;
 }
 .plus {
   overflow: hidden;
@@ -19,13 +20,13 @@ body {
   h4 {
     font-family: 'Roboto';
     font-weight: 600;
-    margin: 0 auto 5px auto;
+    margin: 20px auto 5px auto;
   }
   p {
     font-family: 'Roboto';
     font-size: 13px;
     line-height: 17px;
-    margin: 0 auto 0 auto;
+    margin: 20px auto 20px auto;
   }
   a {
     color: #000;
@@ -33,7 +34,8 @@ body {
 
   // Map.
   .map_container {
-    margin: auto auto;
+
+    margin: -40px auto auto auto;
     svg {
       display: block;
       margin: auto auto;
@@ -54,34 +56,77 @@ body {
   .meta_container {
     font-family: 'Roboto';
     margin: auto auto;
+    max-width: 1000px;
+    position: relative;
     text-align: center;
-    div {
+    .images_container {
+      .clearfix;
+      font-size: 0;
+      .image {
+        height: 100px;
+        width: 100px;
+      }
+      .image_container_d {
+        float: left;
+      }
+      .image_container_r {
+        float: right;
+      }
+    }
+    .bar_container{
+      .clearfix;
       margin-bottom: 20px;
-      label {
-        display: inline-block;
-        font-size: 18px;
-        margin-right: 5px;
-        text-transform: uppercase;
-        &.republicans,
-        &.democratics {
-          height: 26px;
-          line-height: 26px;
-          vertical-align: text-bottom;
-          width: 26px;
+      width: 100%;
+      position: relative;
+      .middle {
+        background-color: #000;
+        height: 50px;
+        left: 50%;
+        margin-left: -2px;
+        position: absolute;
+        width: 4px;
+        &:after {
+          content: '270';
+          font-size: 40px;
+          font-weight: 600;
+          margin-left: -50px;
+          position: absolute;
+          top: -50px;
+          width: 100px;
         }
-        &.republicans {
-          background-color: rgba(240, 119, 99, 1)
-        }
-        &.democratics {
+      }
+      div {
+        box-sizing: border-box;
+        color: #fff;
+        padding: 10px 20px 10px 20px;
+        &.bar_d {
           background-color: rgba(105, 141, 197, 1);
+          float: left;
+          text-align: left;
+        }
+        &.bar_u {
+          background-color: rgba(239, 240, 244, 1);
+          float: left;
+          text-align: left;
+        }
+        &.bar_r {
+          background-color: rgba(227, 75, 91, 1);
+          float: left;
+          text-align: right;
         }
       }
-      span.value {
-        font-size: 26px;
-        font-weight: bold;
-        display: inline-block;
-        margin-right: 20px;
-      }
+    }
+    label {
+      display: inline-block;
+      font-size: 18px;
+      margin-right: 10px;
+      margin-left: 20px;
+      text-transform: uppercase;
+    }
+    span.value {
+      display: inline-block;
+      font-size: 26px;
+      font-weight: 600;
     }
   }
 

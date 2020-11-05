@@ -7,7 +7,13 @@ import * as topojson from 'topojson-client';
 // https://d3js.org/
 import * as d3 from 'd3';
 
-let interval, g, path;
+let interval, g, path, path_prefix;
+if (location.href.match('localhost')) {
+  path_prefix = './';
+}
+else {
+  path_prefix = 'https://raw.githubusercontent.com/ebuddj/2020-us_election_result/main/public/';
+}
 // https://observablehq.com/@d3/u-s-map
 const projection = d3.geoAlbersUsa().scale(1500).translate([645, 400]);
 
@@ -37,7 +43,7 @@ class App extends Component {
   }
   drawMap(data) {
     let width = 1200;
-    let height = 800;
+    let height = 750;
     let svg = d3.select('.' + style.map_container).append('svg').attr('width', width).attr('height', height);
     path = d3.geoPath().projection(projection);
     g = svg.append('g');
@@ -48,7 +54,17 @@ class App extends Component {
         .attr('d', path)
         .attr('class', style.path)
         .attr('fill', (d, i) => {
-          return 'rgba(239, 240, 244, 1)';
+          if (this.state.data[d.properties.name]) {
+            if (parseInt(this.state.data[d.properties.name].d) > 0) {
+              return 'rgba(48, 111, 185, 0.2)';
+            }
+            else if (parseInt(this.state.data[d.properties.name].r) > 0) {
+              return 'rgba(227, 75, 91, 0.2)';
+            }
+            else {
+              return 'rgba(239, 240, 244, 0.5)';
+            }
+          }
         });
 
       g.selectAll('circle').data(data)
@@ -68,20 +84,20 @@ class App extends Component {
           return Math.max(Math.sqrt(parseInt(d.votes)) * 7, 12);
         })
         .attr('stroke', (d,i) => {
-          if (parseFloat(d.d) > 0 || parseFloat(d.r) > 0) {
+          if (parseInt(d.d) > 0 || parseInt(d.r) > 0) {
             return 'transparent'
           }
           else {
-            return '#000';
+            return '#222';
           }
         })
         .attr('class', style.circle)
         .style('fill', (d, i) => {
-          if (parseFloat(d.d) > parseFloat(d.r)) {
-            return 'rgba(48, 111, 185, ' + parseFloat(d.d) + ')';
+          if (parseInt(d.d) > 0) {
+            return 'rgba(48, 111, 185, ' + parseInt(d.d) + ')';
           }
-          else if (parseFloat(d.r) > 0) {
-            return 'rgba(227, 75, 91, ' + parseFloat(d.r) + ')';
+          else if (parseInt(d.r) > 0) {
+            return 'rgba(227, 75, 91, ' + parseInt(d.r) + ')';
           }
           else {
             return 'rgba(239, 240, 244, 1)';
@@ -92,7 +108,7 @@ class App extends Component {
         .enter()
         .append('text')
         .style('fill', (d, i) => {
-          if (parseFloat(d.d) > 0 || parseFloat(d.r) > 0) {
+          if (parseInt(d.d) > 0 || parseInt(d.r) > 0) {
             return '#fff'
           }
           else {
@@ -121,12 +137,12 @@ class App extends Component {
   }
   countVotes(area) {
     if (this.state.data[area]) {
-      if (parseFloat(this.state.data[area].d) > 0) {
+      if (parseInt(this.state.data[area].d) > 0) {
         this.setState((state, props) => ({
           d_votes:parseInt(state.d_votes + parseInt(this.state.data[area].votes))
         }));
       }
-      else if (parseFloat(this.state.data[area].r) > 0) {
+      else if (parseInt(this.state.data[area].r) > 0) {
         this.setState((state, props) => ({
           r_votes:parseInt(state.r_votes + parseInt(this.state.data[area].votes))
         }));
@@ -154,8 +170,23 @@ class App extends Component {
           <div className={style.map_container}></div>
         </div>
         <div className={style.meta_container}>
-          <div><label className={style.democratics}></label><span className={style.value}>Biden {this.state.d_votes}</span><label className={style.republicans}></label><span className={style.value}>Trump {this.state.r_votes}</span></div>
-          <div><label>Source</label><span className={style.value}>DPA</span> <label>Updated</label><span className={style.value}>4.11.2020 21:17 GMT</span></div>
+          <div className={style.images_container}>
+            <div className={style.image_container_d}><img src={path_prefix + 'img/biden.png'} className={style.image} /></div>
+            <div className={style.image_container_r}><img src={path_prefix + 'img/trump.png'} className={style.image} /></div>
+          </div>
+          <div className={style.bar_container}>
+            <span className={style.middle}></span>
+            <div className={style.bar_d} style={{width: (((this.state.d_votes / 538) * 100)) + '%'}}>
+              <span className={style.value}> Biden {this.state.d_votes}</span>
+            </div>
+            <div className={style.bar_u} style={{width: ((((538 - (this.state.d_votes + this.state.r_votes)) / 538) * 100)) + '%'}}>
+              <span className={style.value}>&nbsp;</span>
+            </div>
+            <div className={style.bar_r} style={{width: (((this.state.r_votes / 538)) * 100) + '%'}}>
+              <span className={style.value}>Trump {this.state.r_votes}</span>
+            </div>
+          </div>
+          <div className={style.clearfix}><label>Source</label><span className={style.value}>DPA</span> <label>Updated</label><span className={style.value}>5.11.2020 9:42 GMT</span></div>
         </div>
       </div>
     );

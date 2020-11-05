@@ -16,6 +16,7 @@ The data comes from DPA, a German newswire, that is collecting information from 
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/93dd461dc7ba991666fc96d9b8854435/2020_21049825), as of 0748 GMT
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/d5092ccf5264ddfe740e9ea243a03422/2020_21050029), as of 1811 GMT, cancelled
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/d5092ccf5264ddfe740e9ea243a03422/2020_21050047), as of 1811 GMT
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/d5092ccf5264ddfe740e9ea243a03422/2020_21050059), as of 2117 GMT
 
 **Used by**
 * RTCG/Montenegro on TVCG Sat
