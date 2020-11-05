@@ -2,13 +2,14 @@
 body {
   display: table;
   margin: auto auto;
+  min-height: 100vh;
   padding: 0;
 }
 .plus___DWTpR {
   display: table-cell;
-  min-height: 100vh;
+  height: 100vh;
   margin: auto auto;
-  max-width: 1200px;
+  max-width: 1000px;
   position: relative;
   vertical-align: middle;
   width: 100vw;
@@ -36,7 +37,7 @@ body {
   color: #000;
 }
 .plus___DWTpR .map_container___22zRx {
-  margin: -40px auto auto auto;
+  margin: auto auto auto auto;
 }
 .plus___DWTpR .map_container___22zRx svg {
   display: block;
@@ -57,7 +58,7 @@ body {
 .plus___DWTpR .meta_container___3p0xG {
   font-family: 'Roboto';
   margin: auto auto;
-  max-width: 1200px;
+  max-width: 1000px;
   position: relative;
   text-align: center;
 }
@@ -65,7 +66,7 @@ body {
   zoom: 1;
   font-size: 0;
   margin: auto auto;
-  max-width: 1000px;
+  max-width: 850px;
 }
 .plus___DWTpR .meta_container___3p0xG .images_container___6mpYm:after {
   clear: both;
@@ -87,7 +88,7 @@ body {
 .plus___DWTpR .meta_container___3p0xG .bar_container___1WVaT {
   zoom: 1;
   margin: auto auto 20px auto;
-  max-width: 1000px;
+  max-width: 850px;
   position: relative;
   width: 100%;
 }
