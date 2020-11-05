@@ -3,14 +3,15 @@
 body {
   display: table;
   margin: auto auto;
+  min-height: 100vh;
   padding: 0;
 }
 .plus {
   // https://stackoverflow.com/questions/17736570/why-is-width-100-not-working-on-div-display-table-cell
   display: table-cell;
-  min-height: 100vh;
+  height: 100vh;
   margin: auto auto;
-  max-width: 1200px;
+  max-width: 1000px;
   position: relative;
   vertical-align: middle;
   width: 100vw;
@@ -38,7 +39,8 @@ body {
 
   // Map.
   .map_container {
-    margin: -40px auto auto auto;
+    // border: 1px solid #ccc;
+    margin: auto auto auto auto;
     svg {
       display: block;
       margin: auto auto;
@@ -59,14 +61,14 @@ body {
   .meta_container {
     font-family: 'Roboto';
     margin: auto auto;
-    max-width: 1200px;
+    max-width: 1000px;
     position: relative;
     text-align: center;
     .images_container {
       .clearfix;
       font-size: 0;
       margin: auto auto;
-      max-width: 1000px;
+      max-width: 850px;
       .image {
         height: 100px;
         width: 100px;
@@ -81,7 +83,7 @@ body {
     .bar_container{
       .clearfix;
       margin: auto auto 20px auto;
-      max-width: 1000px;
+      max-width: 850px;
       position: relative;
       width: 100%;
       .middle {
