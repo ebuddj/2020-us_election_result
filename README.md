@@ -4,7 +4,7 @@
 
 ## US Election Result
 
-See the latest updated graphics from https://ebuddj.github.io/2020-us_election_result/
+See the latest updated graphics here https://ebuddj.github.io/2020-us_election_result/
 
 The data comes from DPA, a German newswire, that is collecting information from various sources.
 
