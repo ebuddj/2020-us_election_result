@@ -94,10 +94,10 @@ class App extends Component {
         .attr('class', style.circle)
         .style('fill', (d, i) => {
           if (parseInt(d.d) > 0) {
-            return 'rgba(48, 111, 185, ' + parseInt(d.d) + ')';
+            return 'rgba(48, 111, 185, 1)';
           }
           else if (parseInt(d.r) > 0) {
-            return 'rgba(227, 75, 91, ' + parseInt(d.r) + ')';
+            return 'rgba(227, 75, 91, 1)';
           }
           else {
             return 'rgba(239, 240, 244, 1)';
