@@ -23,6 +23,9 @@ The data comes from DPA, a German newswire, that is collecting information from 
 
 **Used by**
 * RTCG/Montenegro on TVCG Sat
+* RTV/Slovenia on TVS1
+* RTE/Ireland on RTE2
+* RTVE/Spain on TVE La 1 and on Internacional
 
 ## How to use
 
