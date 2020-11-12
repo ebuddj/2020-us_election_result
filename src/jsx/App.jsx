@@ -186,7 +186,7 @@ class App extends Component {
               <span className={style.value}>Trump {this.state.r_votes}</span>
             </div>
           </div>
-          <div className={style.clearfix}><label>Source</label><span className={style.value}>DPA</span> <label>Updated</label><span className={style.value}>8.11.2020 5.31 UTC</span></div>
+          <div className={style.clearfix}><label>Source</label><span className={style.value}>DPA</span> <label>Updated</label><span className={style.value}>11.11.2020 14.53 UTC</span></div>
         </div>
       </div>
     );
