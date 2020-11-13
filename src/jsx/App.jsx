@@ -176,13 +176,13 @@ class App extends Component {
           </div>
           <div className={style.bar_container}>
             <span className={style.middle}></span>
-            <div className={style.bar_d} style={{width: (((this.state.d_votes / 538) * 100)) + '%'}}>
+            <div className={style.bar_d} style={{width: ((this.state.d_votes / 538) * 100) + '%'}}>
               <span className={style.value}> Biden {this.state.d_votes}</span>
             </div>
-            <div className={style.bar_u} style={{width: ((((538 - (this.state.d_votes + this.state.r_votes)) / 538) * 100)) + '%'}}>
+            <div className={style.bar_u} style={{width: (((538 - (this.state.d_votes + this.state.r_votes)) / 538) * 100) + '%'}}>
               <span className={style.value}>&nbsp;</span>
             </div>
-            <div className={style.bar_r} style={{width: (((this.state.r_votes / 538)) * 100) + '%'}}>
+            <div className={style.bar_r} style={{width: ((this.state.r_votes / 538) * 100) + '%'}}>
               <span className={style.value}>Trump {this.state.r_votes}</span>
             </div>
           </div>
