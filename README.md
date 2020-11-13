@@ -19,6 +19,7 @@ The data comes from DPA, a German newswire, that is collecting information from 
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/d5092ccf5264ddfe740e9ea243a03422/2020_21050059), as of 4.11.2020 2117 UTC
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/a5caac1113de876e658b30443756b9c2/2020_21050142), as of 5.11.2020 1120 UTC
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/a5eef11890f30f20b572d849318eb835/2020_21050679), as of 8.11.2020 0531 UTC
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/a432923ff1500271d31f1474e8f8019a/2020_21051483), as of 13.11.2020 0436 UTC
 * [Social Newswire](https://www.evnsocialnewswire.ch/data/us-graphic-shows-latest-unofficial-electoral-vote-count-in-us-elections/)
 
 **Used by**
