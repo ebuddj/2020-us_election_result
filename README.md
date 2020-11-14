@@ -23,9 +23,10 @@ The data comes from DPA, a German newswire, that is collecting information from 
 * [Social Newswire](https://www.evnsocialnewswire.ch/data/us-graphic-shows-latest-unofficial-electoral-vote-count-in-us-elections/)
 
 **Used by**
+* RAI/Italy on Rai Uno and Rai 3
 * RTCG/Montenegro on TVCG Sat
-* RTV/Slovenia on TVS1
 * RTE/Ireland on RTE2
+* RTV/Slovenia on TVS1
 * RTVE/Spain on TVE La 1 and on Internacional
 
 ## How to use
