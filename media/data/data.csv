@@ -9,7 +9,7 @@ Delaware,1,0,3,DE
 South Carolina,0,1,9,SC
 South Dakota,0,1,3,SD
 Florida,0,1,29,FL
-Georgia,0,0,16,GA
+Georgia,1,0,16,GA
 Hawaii,1,0,4,HI
 Idaho,0,1,4,ID
 Illinois,1,0,20,IL
@@ -43,7 +43,7 @@ Ohio,0,1,18,OH
 Oklahoma,0,1,7,OK
 Oregon,1,0,7,OR
 Pennsylvania,1,0,20,PA
-North Carolina,0,0,15,NC
+North Carolina,0,1,15,NC
 North Dakota,0,1,3,ND
 Rhode Island,1,0,4,RI
 Tennessee,0,1,11,TN
