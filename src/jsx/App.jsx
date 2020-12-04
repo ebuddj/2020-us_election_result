@@ -80,7 +80,6 @@ class App extends Component {
           if (parseInt(d.votes) === 1) {
             return 6;
           }
-
           return Math.max(Math.sqrt(parseInt(d.votes)) * 7, 12);
         })
         .attr('stroke', (d,i) => {
