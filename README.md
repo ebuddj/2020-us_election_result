@@ -2,7 +2,7 @@
 
 **Live demo** https://ebuddj.github.io/2020-us_election_result/
 
-## US Election Result
+## US Election Result (EBU)
 
 See the latest updated graphics here https://ebuddj.github.io/2020-us_election_result/
 
